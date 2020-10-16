@@ -1,0 +1,200 @@
+body {
+  max-width: 500px;
+  width: 500px;
+  height: 100%;
+  background-color: #252525;
+  margin: 0;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0px 0px 5px 1px black;
+}
+html {
+  background-color: #3a3a3a;
+  height: 100%;
+}
+.on-off {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+  font-family: "Fira Sans";
+}
+
+#password {
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: block;
+}
+
+#password:focus {
+  outline: none;
+}
+
+.continue {
+  color: white;
+}
+.notification-block {
+  border-bottom: 2px solid black;
+  padding: 15px;
+  font-family: "Fira Sans";
+}
+.time-stamp {
+  color: gray;
+  width: 100%;
+  text-align: right;
+}
+.number {
+  background-color: #363636;
+  border: 1px solid black;
+  font-size: 16pt;
+  color: white;
+  width: 220px;
+  padding: 5px;
+  cursor: pointer;
+}
+.block1 {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+}
+.block1 > div > img {
+  position: relative;
+  top:50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  margin-left: 10px;
+}
+.number:focus {
+  outline: none;
+}
+.type {
+  color: white;
+  font-size: 16pt;
+  position: relative;
+  top:50%;
+  transform: translateY(-50%);
+  display: block;
+}
+.typeOuter {
+  width: max-content;
+  flex:1;
+  text-align: right;
+}
+.block2 {
+  color: white;
+  font-family: "Fira Sans";
+  font-size:14pt;
+  margin-top:10px;
+}
+.state {
+  font-family: "Fira Sans";
+  font-weight: 800;
+  text-decoration: none;
+  font-size: 14pt;
+  margin-top:10px;
+  display: block;
+}
+.notReady {
+  color: green;
+}
+.ready {
+  color: red;
+}
+.buttons-links{
+  display: flex;
+}
+.unban {
+  font-family: "Fira Sans";
+  font-weight: 100;
+  color: yellow;
+  text-decoration: none;
+  display: block;
+  margin-top:10px;
+  text-align: right;
+  flex:1;
+}
+.lab {
+  color: white;
+  font-family: "Fira Sans";
+  margin-left: 20px;
+}
+.moreButton {
+  color: white;
+  text-decoration: none;
+  border: 3px solid green;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: "Fira Sans";
+  background-color: rgba(72, 251, 72, 0.25);
+  display: block;
+  width: fit-content;
+  margin-top:10px;
+}
+.moreButton-outer {
+  width:100%;
+}
+.line-split {
+  background: 2px white;
+  margin: 0;
+}
+.head-controls {
+  padding: 10px;
+}
+.qdFilt {
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+}
+.qdFilterText {
+  color: #00ee00;
+  text-shadow: 0px 0px 2px #00ee00;
+  font-family: "Fira Sans";
+  vertical-align: middle;
+}
+#numberFilter {
+  background: transparent;
+  border: 1px solid gray;
+  padding: 5px;
+  color: white;
+}
+#numberFilter:focus {
+  outline: none;
+}
+.ban-option {
+  position: absolute;
+  z-index: 2;
+  background-color: rgba(0,0,0,0.75);
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.ban-option > div {
+  background-color: #ffffff;
+  top:50%;
+  left:50%;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  width: 50%;
+}
+.ban-option a {
+  display: block;
+    width: initial;
+    height: 50px;
+    padding: 25px 25px 11px 25px;
+    color: black;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+.ban-option a:active {
+  background-color: #eeeeee;
+}
+.notification-container {
+  height: calc(100% - 95px);
+  max-height: -webkit-fill-available;
+  overflow-y:scroll;
+}
+#list-page {
+  height: 100%;
+}

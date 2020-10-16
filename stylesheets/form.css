@@ -1,0 +1,174 @@
+.order-form {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: 1000px;
+  padding-bottom: 100px;
+}
+.form-col {
+  width: 685px;
+  height: 580px;
+}
+.info-col {
+  width: 240px;
+  margin-left: 10px;
+  height: 580px;
+}
+.info-col-text {
+  font-size: 11pt;
+  text-align: justify;
+  -moz-text-align-last: justify;
+  text-align-last: justify;
+  margin-top:5px;
+}
+.info-col-heading {
+  font-size: 29pt;
+  font-weight: 800;
+  margin-top:10px;
+}
+.order-col {
+  background-color: #e8e8e8;
+  border-radius: 5px;
+  display: inline-block;
+  vertical-align: top;
+  padding: 10px;
+}
+.form-input {
+  padding: 20px;
+  border-radius: 5px;
+  border: 0px solid transparent;
+  width: -webkit-fill-available;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+  font-size: 14pt;
+  font-family: "Fira Sans";
+}
+.form-input::placeholder {
+  color: #bdbdbd;
+}
+.form-input:focus{
+  outline:none;
+  border:0;
+}
+.mobile-col {
+  bottom: 10px;
+  width: 240px;
+}
+.yt {
+  max-width: 240px;
+  width:240px;
+  height:240px;
+  background-image: url("/img/valakas.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  position: static;
+}
+.block2 {
+  margin-top:10px;
+}
+.price-order {
+  background-color: #d0d0d0;
+  color: #7e7e7e;
+  font-size: 10pt;
+  padding: 2px;
+  border-radius: 2px;
+  vertical-align: middle;
+  display: inline-block;
+  margin-left:2px;
+}
+.block3 {
+  margin-top:10px;
+}
+.block3 > textarea {
+  height: 260px;
+  resize: none;
+}
+.block4 {
+  height: 55px;
+}
+.error-warning {
+  color: red;
+  position: absolute;
+  width: 515px;
+  margin-top: 15px;
+  text-align: center;
+}
+.pay {
+  padding:10px 15px;
+  transform: translateY(5px);
+  float: right;
+}
+.user-button {
+  background-color: #24a8b9;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5), 0px 5px 0px 0px #24a8b9;
+    border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  display: block;
+  -webkit-transition: margin-top 0.1s ease-out, box-shadow 0.1s ease-out;
+  -moz-transition: margin-top 0.1s ease-out, box-shadow 0.1s ease-out;
+  -ms-transition: margin-top 0.1s ease-out, box-shadow 0.1s ease-out;
+  -o-transition: margin-top 0.1s ease-out, box-shadow 0.1s ease-out;
+  transition: margin-top 0.1s ease-out, box-shadow 0.1s ease-out;
+}
+.user-button-active {
+  /*box-shadow: inset 0px 0px 5px 0px rgba(0,0,0,0.5);*/
+  box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5), 0px 0px 0px 0px #24a8b9;
+  margin-top: 5px;
+}
+.centered {
+  position: relative;
+  top:285px;
+  left:352px;
+  transform: translate(-50%,-50%);
+  width:350px;
+}
+.success-icon {
+  background-image: url("/img/success.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 150px;
+}
+.failure-icon {
+  background-image: url("/img/fail.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 150px;
+}
+.clock-icon {
+  background-image: url("/img/time.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 150px;
+}
+.failure-text {
+  font-size: 14pt;
+  margin-top:20px;
+}
+.failure-text a {
+  color: black;
+}
+h1 {
+  font-weight: 800;
+  font-size: 46pt;
+}
+.disclaimer {
+  position: static;
+  display: block;
+  width: 685px;
+  font-size: 8pt;
+  color: gray;
+  text-align: right;
+}
+.ok-button {
+  width: 100px;
+  padding: 10px;
+  position: absolute;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+.outer-order-form {
+  padding: 100px 0;
+}

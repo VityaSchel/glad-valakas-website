@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Уведомления о звонках</title>
+    <link rel="stylesheet" href="/stylesheets/materialize-switch.css?v=1.0">
+    <link rel="stylesheet" href="/stylesheets/notifications.css?v=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="ban-option" id="ban-options">
+      <div>
+        <a href="#" onclick="banUser(); return false;">Забанить пользователя, который скинул донат</a>
+        <a href="#" onclick="banNumber(); return false;">Забанить номер, чтобы больше его не кидали</a>
+        <a href="#" onclick="banCancel(); return false;">Отмена</a>
+      </div>
+    </div>
+    <div class="on-off" align="center">
+      <div id="main-page">
+        <label class="pure-material-switch">
+          <input type="checkbox" id="order-switch">
+          <span></span>
+          <br>
+        </label>
+        <br>Принимать заявки
+      </div>
+      <div id="login-page" style="display: none">
+        <label for="pass">Пароль</label>
+        <input id="password" />
+        <a href="#" class="continue">Продолжить</a>
+      </div>
+    </div>
+    <div id="list-page" style="display: none">
+      <div class="head-controls">
+        <input autocomplete="off" id="numberFilter" placeholder="Фильтр по номеру">
+        <input type="checkbox" name="queuedFilter" id="queuedFilter" class="qdFilt">
+        <label for="queuedFilter" class="qdFilterText">Показать только неготовые (<span id="qdFilterTextCounter"></span>)</label>
+        <br>
+        <div style="width: 100%;" align="center">
+          <label class="pure-material-switch" style="margin: 10px 0;">
+            <input type="checkbox" id="order-switch-off" checked>
+            <span style="color: white;">Принимать заявки</span>
+            <br>
+          </label>
+        </div>
+      </div>
+      <hr class="line-split">
+      <div class="notification-container" id="notif-blocks">
+        <div class="moreButton-outer" id="moreButton" align="center">
+          <a href="#" class="moreButton">Показать следующие 20 заявок</a>
+        </div>
+        <p class="lab">Здесь будут появляться звонки</p>
+      </div>
+    </div>
+    <script src="/js/login.js"></script>
+    <script src="/js/cookie.umd.min.js"></script>
+    <script src="/js/base64.js"></script>
+  </body>
+</html>

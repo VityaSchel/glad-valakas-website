@@ -1,0 +1,36 @@
+body {
+  height: 100%;
+  background: #dedede;
+  background: -moz-linear-gradient(top, #969696 0%, #dedede 25%);
+  background: -webkit-linear-gradient(top, #969696 0%,#dedede 25%);
+  background: linear-gradient(to bottom, #969696 0%,#dedede 25%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#969696', endColorstr='#dedede',GradientType=0 );
+  font-family: "Fira Sans";
+  margin:0;
+}
+.splitter {
+  width: 50px;
+  height: 1px;
+  display: inline-block;
+}
+.footer {
+  width: -webkit-fill-available;
+  text-align: center;
+  color: white;
+  font-family: "Fira Sans";
+  padding: 5px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), transparent);
+}
+.footer a {
+  color: white;
+}
+.error-status {
+  text-align: center;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+.error-status {
+  font-family: "Fira Sans";
+}

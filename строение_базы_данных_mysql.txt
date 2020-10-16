@@ -1,0 +1,25 @@
+Название бд: gladvalakas
+Все внутри в кодировке utf8-mb4_unicode_ci (4 байтный unicode)
+
+1 таблица: banned
+Столбец         Тип данных         Комментарий
+ip              text               ip-адрес забаненного
+uid             tinytext           уникальный номер забаненного (присваивается в куках /js/user_id.js)
+
+2 таблица: bannedNumbers
+Столбец         Тип данных         Комментарий
+number          tinytext           номер забаненного в едином формате (см. /banNumber.php)
+timestamp       bigint(uint64)     метка времени бана в unix формате
+
+3 таблица: orders
+Столбец         Тип данных         Комментарий
+invoiceid       bigint (uint64)    уникальный номер счета в пределах сайта
+ROBOKASSAID     int (int32)        уникальный номер счета в системе robokassa
+number	        text               номер телефона
+banned	        tinyint (int8)     забанен
+description     text               описание заказа (указывается пользователем в форме)
+type	          tinyint (int8)     тип заказа: 1, 2, 3 (указывается пользователем в форме)
+timestamp       bigint (uint64)    метка времени создания заказа в unix формате
+uid	            tinytext           уникальный номер пользователя, создавшего заказ (присваивается в куках /js/user_id.js)
+ip	            text               ip-адрес пользователя, создавшего заказ
+status          tinytext           статус заказа (см /памятка.txt)

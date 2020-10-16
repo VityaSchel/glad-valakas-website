@@ -1,0 +1,12 @@
+# Google, Yandex
+User-agent: Googlebot
+User-agent: Yandex
+Disallow: /img/
+Disallow: /js/
+Disallow: /stylesheets/
+
+# Other
+User-agent: *
+Allow: /
+
+# Interesno, should I restrict pages kotorie secret?
